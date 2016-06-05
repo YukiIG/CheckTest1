@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var numArray: [Int] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        for i in 1 ... 50 {
+            numArray.append(i*2)
+        }
+        print(numArray)
     }
 
     override func didReceiveMemoryWarning() {
